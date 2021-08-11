@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import Alerter from "../components/Alert/Alterer";
-import IconContainer from "../components/Alert/Cards/tailwindCards/IconContainer";
+import Alerter from "../components/alert/Alterer";
+import Boombox from "../components/boombox/BoomBox";
+import IconContainer from "../components/tailwindCards/IconContainer";
 
 const Grid = styled.div`
   display: flex;
@@ -20,11 +21,12 @@ function SiteGrid({ children }) {
         <IconContainer />
         <Alerter>One A day, Until I get Paid</Alerter>
       </Grid>
-      {/* <Grid>
+
+      <Grid>
         {children}
-        <IconContainer />
-        <Alerter>One A day, Until I get Paid</Alerter>
-      </Grid> */}
+
+        <Boombox />
+      </Grid>
     </>
   );
 }
