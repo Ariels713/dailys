@@ -19,7 +19,7 @@ function SiteGrid({ children }) {
       <Grid>
         {children}
         <IconContainer />
-        <Alerter>One A day, Until I get Paid</Alerter>
+        {/* <Alerter>One A day, Until I get Paid</Alerter> */}
       </Grid>
 
       <Grid>
