@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import CardIcon from "./CardIcon";
-import CardIcon2 from "./CardIcon2";
-import CardIcon3 from "./CardIcon3";
+// import CardIcon2 from "./CardIcon2";
+// import CardIcon3 from "./CardIcon3";
 import GridItem from "../../../../layout/GridItem";
 const Container = styled.div`
   width: 250px;
