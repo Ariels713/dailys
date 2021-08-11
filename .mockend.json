@@ -8,7 +8,7 @@
       "belongsTo": "Post"
     }
   },
-  "ERRMESSAGE": {
+  "Error": {
     "message": { "string": ["Sorry Error Fetching Data"] }
   }
 }
