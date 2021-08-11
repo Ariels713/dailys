@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Boombox from "../components/boombox/BoomBox";
 import IconContainer from "../components/tailwindCards/IconContainer";
-import Alerter from "../components/alert/Alterer";
+import Alerter from "../components/Alert/Alterer";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
