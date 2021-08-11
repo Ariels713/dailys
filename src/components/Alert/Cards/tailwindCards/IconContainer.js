@@ -45,7 +45,10 @@ const Wrapper = styled.div`
 function IconContainer({ children }) {
   return (
     <>
-      <GridItem backgroundColor="hsl(173, 71%, 35%)">
+      <GridItem
+        backgroundColor="hsl(173, 71%, 35%)"
+        link="https://codesandbox.io/s/vigilant-stonebraker-pedjb"
+      >
         <Wrapper>
           <Container>
             <VersionIcon>2.0+</VersionIcon>

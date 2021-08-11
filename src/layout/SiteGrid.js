@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Alerter from "../components/Alert/Alter";
+import Alerter from "../components/Alert/Alterer";
 import IconContainer from "../components/Alert/Cards/tailwindCards/IconContainer";
 
 const Grid = styled.div`

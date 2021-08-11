@@ -34,7 +34,10 @@ const Wrapper = styled.div`
 function Alerter({ children, primaryColor, secondaryColor }) {
   return (
     <>
-      <GridItem backgroundColor="hsl(354, 100%, 71%)">
+      <GridItem
+        backgroundColor="hsl(354, 100%, 71%)"
+        link="https://codesandbox.io/s/dank-sun-l6dot"
+      >
         <Wrapper>
           <Alert primaryColor={primaryColor} secondaryColor={secondaryColor}>
             <Children secondaryColor={secondaryColor}>{children}</Children>

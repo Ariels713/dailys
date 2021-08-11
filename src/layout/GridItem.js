@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import CodeLink from "./CodeLink";
 
 const GridItemDiv = styled.div`
+  position: relative;
   width: 50%;
   height: 400px;
   display: flex;
@@ -9,9 +11,20 @@ const GridItemDiv = styled.div`
   background-color: ${(props) => props.backgroundColor || "hsl(30, 100%, 99%)"};
 `;
 
-function GridItem({ children, backgroundColor }) {
+const CodeSandboxLink = styled.a`
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+`;
+
+function GridItem({ children, backgroundColor, link }) {
   return (
-    <GridItemDiv backgroundColor={backgroundColor}>{children}</GridItemDiv>
+    <GridItemDiv backgroundColor={backgroundColor}>
+      {children}
+      <CodeSandboxLink href={link} target="_blank">
+        <CodeLink />
+      </CodeSandboxLink>
+    </GridItemDiv>
   );
 }
 
