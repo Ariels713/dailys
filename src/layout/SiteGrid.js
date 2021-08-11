@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import Alerter from "../components/alert/Alterer";
 import Boombox from "../components/boombox/BoomBox";
 import IconContainer from "../components/tailwindCards/IconContainer";
-
+import Alerter from "../components/alert/Alterer";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +18,7 @@ function SiteGrid({ children }) {
       <Grid>
         {children}
         <IconContainer />
-        {/* <Alerter>One A day, Until I get Paid</Alerter> */}
+        <Alerter>One A day, Until I get Paid</Alerter>
       </Grid>
 
       <Grid>
