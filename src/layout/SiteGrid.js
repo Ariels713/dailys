@@ -24,7 +24,6 @@ function SiteGrid({ children }) {
 
       <Grid>
         {children}
-
         <Boombox />
       </Grid>
     </>

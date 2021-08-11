@@ -56,7 +56,7 @@ function Boombox() {
 
   return (
     <>
-      <GridItem>
+      <GridItem link="https://codesandbox.io/s/hopeful-flower-99hd7?file=/src/App.js">
         <Interactive />
         <Wrapper>
           <svg
