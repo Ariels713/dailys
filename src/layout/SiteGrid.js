@@ -7,6 +7,9 @@ const Grid = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 function SiteGrid({ children }) {
@@ -17,6 +20,11 @@ function SiteGrid({ children }) {
         <IconContainer />
         <Alerter>One A day, Until I get Paid</Alerter>
       </Grid>
+      {/* <Grid>
+        {children}
+        <IconContainer />
+        <Alerter>One A day, Until I get Paid</Alerter>
+      </Grid> */}
     </>
   );
 }

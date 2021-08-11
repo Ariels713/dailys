@@ -3,9 +3,10 @@ import CodeLink from "./CodeLink";
 
 const GridItemDiv = styled.div`
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 400px;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   background-color: ${(props) => props.backgroundColor || "hsl(30, 100%, 99%)"};

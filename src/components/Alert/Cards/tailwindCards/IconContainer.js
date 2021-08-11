@@ -55,16 +55,16 @@ function IconContainer({ children }) {
             <CardIcon />
             <Children>Shareable Presets</Children>
           </Container>
-          <Container>
+          {/* <Container>
             <VersionIcon>2.0+</VersionIcon>
             <CardIcon2 />
             <Children>Dark Mode</Children>
-          </Container>
-          <Container>
+          </Container> */}
+          {/* <Container>
             <VersionIcon>2.0+</VersionIcon>
             <CardIcon3 />
             <Children>Gradients</Children>
-          </Container>
+          </Container> */}
         </Wrapper>
       </GridItem>
     </>
