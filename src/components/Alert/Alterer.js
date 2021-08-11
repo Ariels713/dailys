@@ -36,7 +36,7 @@ function Alerter({ children, primaryColor, secondaryColor }) {
     <>
       <GridItem
         backgroundColor="hsl(354, 100%, 71%)"
-        link="https://codesandbox.io/s/dank-sun-l6dot"
+        link="https://codesandbox.io/s/beautiful-sound-bpv7b"
       >
         <Wrapper>
           <Alert primaryColor={primaryColor} secondaryColor={secondaryColor}>
