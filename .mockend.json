@@ -10,5 +10,10 @@
   },
   "Error": {
     "message": { "string": ["Error fetching data 😭"] }
+  },
+  "Sleep": {
+    "sleep_time": {
+      "string": ["8.75"]
+    }
   }
 }
