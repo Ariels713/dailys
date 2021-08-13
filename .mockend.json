@@ -12,8 +12,6 @@
     "message": { "string": ["Error fetching data 😭"] }
   },
   "Sleep": {
-    "sleep_time": {
-      "string": ["8.75"]
-    }
+    "message": { "string": ["8.75"] }
   }
 }
