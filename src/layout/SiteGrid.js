@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Boombox from "../components/boombox/BoomBox";
 import IconContainer from "../components/tailwindCards/IconContainer";
 import Alerter from "../components/Alert/Alterer";
+import SleepTrackerCard from "../components/sleepTracker/SleepTrackerCard";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -24,6 +25,7 @@ function SiteGrid({ children }) {
       <Grid>
         {children}
         <Boombox />
+        <SleepTrackerCard />
       </Grid>
     </>
   );
