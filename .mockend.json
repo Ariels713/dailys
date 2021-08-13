@@ -3,7 +3,7 @@
     "title": { "string": {} }
   },
   "Comment": {
-    "body": { "string": ["Hello Ariel! Welcome to your app!"] },
+    "body": { "string": ["Hello Ariel! Welcome to your app!", "8.75"] },
     "post": {
       "belongsTo": "Post"
     }
