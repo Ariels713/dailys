@@ -3,6 +3,7 @@ import Boombox from "../components/boombox/BoomBox";
 import IconContainer from "../components/tailwindCards/IconContainer";
 import Alerter from "../components/Alert/Alterer";
 import SleepTrackerCard from "../components/sleepTracker/SleepTrackerCard";
+import CssIsAwesome from "../components/cssIsAwesome/CssIsAwesome";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -16,6 +17,11 @@ const Grid = styled.div`
 function SiteGrid({ children }) {
   return (
     <>
+      <Grid>
+        {children}
+
+        <CssIsAwesome />
+      </Grid>
       <Grid>
         {children}
         <IconContainer />
