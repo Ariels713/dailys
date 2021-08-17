@@ -32,3 +32,17 @@ button {
   background-color: hsl(104, 100%, 100%);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+@media (max-width: 640px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .awesome {
+    font-size: 1.25rem;
+    width: 70px;
+    padding: 1rem;
+  }
+  button {
+    font-size: 0.75rem;
+  }
+}
