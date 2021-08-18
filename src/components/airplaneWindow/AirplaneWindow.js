@@ -15,7 +15,7 @@ function AirplaneWindow() {
   return (
     <>
       <GridItem
-        backgroundColor="hsl(42, 93%, 64%)"
+        backgroundColor="hsl(19, 28%, 95%)"
         link="https://codesandbox.io/s/busy-khayyam-hzr0d?file=/src/paralelleStateMachine.js:0-919"
       >
         <div
