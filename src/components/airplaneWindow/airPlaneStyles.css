@@ -1,0 +1,222 @@
+.airplaneWrapper {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.glass {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(200, 78%, 69%);
+  width: 80%;
+  height: 300px;
+  border-radius: 55px;
+}
+.glass[data-flightTime="daytime"] {
+  background: linear-gradient(
+    to top,
+    hsl(208, 60%, 73%),
+    hsl(210, 85%, 77%),
+    hsl(207, 83%, 72%),
+    hsl(210, 88%, 71%),
+    hsl(213, 89%, 70%),
+    hsl(212, 91%, 69%)
+  );
+}
+.glass[data-flightTime="dusk"] {
+  /* background: linear-gradient(to top, hsl(48, 95%, 48%), hsl(24, 96%, 46%)); */
+  background: linear-gradient(
+    to top,
+    hsl(231, 46%, 16%),
+    hsl(333, 37%, 32%),
+    hsl(356, 48%, 45%),
+    hsl(21, 100%, 76%),
+    hsl(64, 88%, 90%),
+    hsl(18, 98%, 78%),
+    hsl(3, 38%, 61%),
+    hsl(201, 38%, 52%),
+    hsl(229, 12%, 49%)
+  );
+}
+.glass[data-flightTime="night"] {
+  background: linear-gradient(
+    to top,
+    hsl(208, 83%, 63%),
+    hsl(219, 68%, 63%),
+    hsl(224, 43%, 47%),
+    hsl(234, 37%, 42%),
+    hsl(244, 29%, 44%),
+    hsl(232, 32%, 33%),
+    hsl(229, 30%, 26%),
+    hsl(232, 32%, 19%),
+    hsl(247, 41%, 14%)
+  );
+}
+.glass[data-state="turbulance"] {
+  background-color: hsl(200, 70%, 38%);
+}
+
+/* Daytime styles */
+.clouds {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.cloud_2 {
+  padding-top: 20px;
+}
+
+/* Daytime Styles end */
+
+/* Dusk Styles */
+.sunset {
+  display: flex;
+  height: 260px;
+  align-items: flex-end;
+  margin-right: 200px;
+}
+
+/* Dusk Styles */
+
+/* Night styles */
+.constalation {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: 200px;
+}
+.star {
+  width: 3px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: hsl(207, 40%, 86%);
+  animation: twinkle 1.5s ease infinite;
+  margin: 9.5px;
+}
+
+/* Night Styles */
+
+.shade {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 180px;
+  height: 60px;
+  border: solid 1px hsl(41, 8%, 99%);
+  border-radius: 30px;
+  background-color: hsl(41, 8%, 91%);
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.handle {
+  width: 50px;
+  height: 8px;
+  border: solid 2px hsl(46, 9%, 70%);
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.frame {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 180px;
+  height: 280px;
+  border: solid 20px hsl(41, 8%, 85%);
+  border-radius: 80px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.airplane_button {
+  border: none;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.airplane_toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animaitons turbulance */
+.airplaneWrapper[data-state="turbulance"] {
+  animation: turbulance 0.2s linear 5;
+}
+@keyframes turbulance {
+  0% {
+    transform: translateY(-1%);
+    transform: translateX(-1%);
+  }
+
+  25% {
+    transform: translateY(7%);
+  }
+
+  100% {
+    transform: translateY(-1%);
+    transform: translateX(-1%);
+  }
+}
+
+/* Animations Clouds */
+
+#cloud_1 {
+  animation: bigCloud 7s linear infinite;
+}
+
+@keyframes bigCloud {
+  0% {
+    transform: translateX(-120px);
+  }
+
+  100% {
+    transform: translateX(120px);
+  }
+}
+
+#cloud_2 {
+  animation: babyCloud 8s linear infinite;
+}
+
+@keyframes babyCloud {
+  0% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(220px);
+  }
+}
+/* Cloud Animation Ends */
+
+/* Twinkle Star Animation */
+
+@keyframes twinkle {
+  0% {
+    background-color: hsl(207, 40%, 86%);
+  }
+
+  50% {
+    background-color: hsl(229, 34%, 66%);
+  }
+  100% {
+    background-color: hsl(207, 40%, 86%);
+  }
+}
+
+/* Twinkle Star Animation ends */

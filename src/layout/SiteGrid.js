@@ -4,6 +4,7 @@ import IconContainer from "../components/tailwindCards/IconContainer";
 import Alerter from "../components/Alert/Alterer";
 import SleepTrackerCard from "../components/sleepTracker/SleepTrackerCard";
 import CssIsAwesome from "../components/cssIsAwesome/CssIsAwesome";
+import AirplaneWindow from "../components/airplaneWindow/AirplaneWindow";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@ function SiteGrid({ children }) {
     <>
       <Grid>
         {children}
-
+        <AirplaneWindow />
         <CssIsAwesome />
       </Grid>
       <Grid>
