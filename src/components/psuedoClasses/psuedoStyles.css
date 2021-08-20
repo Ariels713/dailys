@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.psuedo_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 300px;
+  border: solid hsla(104, 100%, 100%, 0.25) 12px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(30, 33%, 93%, 0.5);
+  overflow: hidden;
+}
+
+.intro {
+  isolation: isolate;
+  z-index: 1;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.card {
+  position: relative;
+}
+
+/* Paper Stacks */
+.paper_stack {
+  position: relative;
+}
+.paper_1 {
+  position: absolute;
+  top: -280px;
+  left: 121px;
+  background: linear-gradient(
+    160deg,
+    hsla(186, 64%, 64%, 1),
+    hsla(42, 69%, 81%, 1)
+  );
+  width: 331px;
+  height: 414px;
+  transform: translateX(20deg);
+  transform: rotateZ(326deg);
+}
+
+.paper_2 {
+  position: absolute;
+  top: -280px;
+  left: 121px;
+  background: linear-gradient(
+    160deg,
+    hsla(42, 69%, 81%, 1),
+    hsla(186, 64%, 64%, 1)
+  );
+  width: 331px;
+  height: 414px;
+  transform: translateX(20deg);
+  transform: rotateZ(332deg);
+}
+
+.paper_3 {
+  position: absolute;
+  top: -280px;
+  left: 121px;
+  background: linear-gradient(
+    160deg,
+    hsla(42, 100%, 70%, 1),
+    hsla(164, 92%, 44%, 1)
+  );
+  width: 331px;
+  height: 414px;
+  transform: translateX(20deg);
+  transform: rotateZ(339deg);
+}
+
+.paper_4 {
+  position: absolute;
+  top: -280px;
+  left: 121px;
+  background: linear-gradient(
+    166deg,
+    hsla(33, 99%, 82%, 1),
+    hsla(1, 99%, 84%, 1)
+  );
+  width: 331px;
+  height: 414px;
+  transform: translateX(20deg);
+  transform: rotateZ(345deg);
+  /* animation:"slideIn"; */
+  animation-timing-function: linear;
+}
+
+.dummy_text {
+  /* color:white; */
+  color: linear-gradient(transparent 150px, white);
+}
+/* Paper Stacks */
+
+/* Quote Styles */
+.quote {
+  font-family: "Assistant", sans-serif;
+}
+
+.quote[data-before="hidden"]::before {
+  content: "\2036";
+  font-size: 6rem;
+  position: absolute;
+  top: -137px;
+  left: -6px;
+  background: linear-gradient(
+    160deg,
+    hsla(186, 64%, 64%, 1),
+    hsla(42, 69%, 81%, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote[data-after="hidden"]::after {
+  content: " I'll take it!";
+  font-size: 1rem;
+  color: white;
+  font-weight: 800;
+}
+
+.quote[data-selection="hidden"]::selection {
+  background-color: hsla(153, 64%, 54%, 1);
+  color: white;
+  font-weight: 800;
+}
+
+.quote[data-firstLine="hidden"]::first-line {
+  font-family: "Pacifico", cursive;
+  color: hsla(355, 88%, 66%, 1);
+}
+
+/* End of quote styles */
+
+.psuedoFigure {
+  padding: 0;
+  margin: 0;
+  margin-top: -100px;
+  isolation: isolate;
+}
+
+figcaption {
+  display: block;
+  font-size: 0.75rem;
+  isolation: isolate;
+  color: hsla(110, 0%, 13%, 0.7);
+  text-align: center;
+}
+figcaption[data-selection="hidden"]::selection {
+  background-color: hsla(153, 64%, 54%, 1);
+  color: white;
+  font-weight: 800;
+}
+cite {
+  display: block;
+  color: hsla(110, 0%, 13%, 0.7);
+}
+cite[data-selection="hidden"]::selection {
+  background-color: hsla(153, 64%, 54%, 1);
+  color: white;
+}
+
+.icon-row {
+  isolation: isolate;
+  padding-bottom: 10px;
+}
+
+.ariel {
+  color: hsla(355, 88%, 66%, 1);
+  font-size: 0.75rem;
+}
+
+.psuedoButton {
+  background-color: transparent;
+  border: none;
+  border-right: 2px solid white;
+  outline: none;
+  color: hsla(153, 64%, 55%, 1);
+  font-weight: 800;
+  cursor: pointer;
+  color: hsla(355, 88%, 66%, 1);
+}
+
+code {
+  background-color: hsla(170, 35%, 82%, 1);
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}

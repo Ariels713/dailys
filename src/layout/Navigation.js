@@ -4,6 +4,7 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  background: "white";
 `;
 const NavItems = styled.p`
   font-weight: 700;
