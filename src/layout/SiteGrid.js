@@ -20,6 +20,7 @@ function SiteGrid({ children }) {
   return (
     <>
       <Grid>
+        {children}
         <PseudoElement />
       </Grid>
       <Grid>
