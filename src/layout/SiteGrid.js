@@ -6,6 +6,7 @@ import SleepTrackerCard from "../components/sleepTracker/SleepTrackerCard";
 import CssIsAwesome from "../components/cssIsAwesome/CssIsAwesome";
 import AirplaneWindow from "../components/airplaneWindow/AirplaneWindow";
 import PseudoElement from "../components/psuedoClasses/PsuedoElement";
+import Lamp from "../components/eggheadLamp/Lamp";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -19,6 +20,9 @@ const Grid = styled.div`
 function SiteGrid({ children }) {
   return (
     <>
+      <Grid>
+        <Lamp />
+      </Grid>
       <Grid>
         {children}
         <PseudoElement />
