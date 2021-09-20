@@ -4,7 +4,13 @@ import LightSvg from "./LightSVG";
 import LightSwitchIcon from "./LightSwitchIcon";
 import GridItem from "../../layout/GridItem";
 import styled from "styled-components";
-
+import { inspect } from "@xstate/inspect";
+import Interactive from "../../layout/InteractiveIcon";
+inspect({
+  // options
+  // url: 'https://statecharts.io/inspect', // (default)
+  iframe: false, // open in new window
+});
 const LampWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -94,7 +100,7 @@ const Circles = styled.button`
 `;
 
 function Lamp() {
-  const [current, send] = useMachine(lightMachine);
+  const [current, send] = useMachine(lightMachine, { devTools: true });
   const { rangeValue } = current.context;
   const { colorValue } = current.context;
 
@@ -104,6 +110,7 @@ function Lamp() {
         backgroundColor="hsla(40, 36%, 9%, 1.00)"
         link="https://codesandbox.io/s/eloquent-galois-o7rc2?file=/src/Lamp.js"
       >
+      <Interactive />
         <LampWrapper>
           <LampSVG
             data-state={current.value.lightSwitch}
