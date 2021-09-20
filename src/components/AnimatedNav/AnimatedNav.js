@@ -6,7 +6,7 @@ import AnimatedNavBar from './AnimatedNavBar/AnimatedNavBar'
 import styled from 'styled-components'
 
 const AnimatedNavBarsWrapper = styled.div`
-min-width:600px;
+    min-width:600px;
     display:flex;
     flex-direction:column;
 `
@@ -20,7 +20,7 @@ function AnimatedNav() {
         <AnimatedNavBarsWrapper>
          <UnAnimatedNavBar />   
          <AnimatedNavBar />
-        </AnimatedNavBarsWrapper>
+        </AnimatedNavBarsWrapper>ß
         </GridItem>
 
     )

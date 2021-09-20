@@ -152,6 +152,7 @@
 .airplane_toggle {
   display: flex;
   flex-direction: column;
+  margin-right:20px;
 }
 
 /* Animaitons turbulance */
