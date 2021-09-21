@@ -20,7 +20,7 @@ function AnimatedNav() {
         <AnimatedNavBarsWrapper>
          <UnAnimatedNavBar />   
          <AnimatedNavBar />
-        </AnimatedNavBarsWrapper>ß
+        </AnimatedNavBarsWrapper>
         </GridItem>
 
     )

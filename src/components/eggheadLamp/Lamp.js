@@ -4,13 +4,9 @@ import LightSvg from "./LightSVG";
 import LightSwitchIcon from "./LightSwitchIcon";
 import GridItem from "../../layout/GridItem";
 import styled from "styled-components";
-import { inspect } from "@xstate/inspect";
+
 import Interactive from "../../layout/InteractiveIcon";
-inspect({
-  // options
-  // url: 'https://statecharts.io/inspect', // (default)
-  iframe: false, // open in new window
-});
+
 const LampWrapper = styled.div`
   display: flex;
   flex-direction: column;
