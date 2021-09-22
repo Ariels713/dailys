@@ -8,6 +8,7 @@ import AirplaneWindow from "../components/airplaneWindow/AirplaneWindow";
 import PseudoElement from "../components/psuedoClasses/PsuedoElement";
 import Lamp from "../components/eggheadLamp/Lamp";
 import AnimatedNav from "../components/AnimatedNav/AnimatedNav";
+import TextHoverEffect from "../components/textHoverEffect/TextHoverEffect";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -21,11 +22,14 @@ const Grid = styled.div`
 function SiteGrid({ children }) {
   return (
     <>
-    <Grid>
-      <AnimatedNav />
-    </Grid>
       <Grid>
         <Lamp />
+      </Grid>
+      <Grid>
+        <AnimatedNav />
+      </Grid>
+      <Grid>
+        <TextHoverEffect />
       </Grid>
       <Grid>
         {children}
