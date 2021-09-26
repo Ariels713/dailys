@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-import ToasterLogo from '../ToasterLogo'
+import ToasterLogo from "../ToasterLogo";
 
 const NavigationWrapper = styled.div`
   display: flex;
@@ -34,6 +34,7 @@ const ListItem = styled.li`
 const Anchor = styled.a`
   color: hsla(319, 7%, 13%, 1);
   text-decoration: none;
+  cursor: pointer;
 
   &[data-state="products"] {
     border-bottom: solid hsla(201, 64%, 55%, 1) 4px;
@@ -60,7 +61,6 @@ function UnAnimatedNavBar() {
   }
   return (
     <>
-
       <NavigationWrapper>
         <ToasterLogoWrapper>
           <ToasterLogo />
@@ -71,7 +71,6 @@ function UnAnimatedNavBar() {
               <Anchor
                 data-state={underLine === "products" && "products"}
                 onClick={(e) => setUnderline(getInnerText(e))}
-                href="#"
               >
                 Products
               </Anchor>
@@ -80,7 +79,6 @@ function UnAnimatedNavBar() {
               <Anchor
                 data-state={underLine === "community" && "community"}
                 onClick={(e) => setUnderline(getInnerText(e))}
-                href="#"
               >
                 Community
               </Anchor>
@@ -89,7 +87,6 @@ function UnAnimatedNavBar() {
               <Anchor
                 data-state={underLine === "pricing" && "pricing"}
                 onClick={(e) => setUnderline(getInnerText(e))}
-                href="#"
               >
                 Pricing
               </Anchor>
@@ -98,7 +95,6 @@ function UnAnimatedNavBar() {
               <Anchor
                 data-state={underLine === "contact" && "contact"}
                 onClick={(e) => setUnderline(getInnerText(e))}
-                href="#"
               >
                 Contact
               </Anchor>
@@ -106,7 +102,6 @@ function UnAnimatedNavBar() {
           </UnorderedList>
         </NavElement>
       </NavigationWrapper>
-
     </>
   );
 }

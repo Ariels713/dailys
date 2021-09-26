@@ -1,6 +1,6 @@
 import { useMachine } from "@xstate/react";
 import styled from "styled-components";
-import ToasterLogo from '../ToasterLogo'
+import ToasterLogo from "../ToasterLogo";
 import { animatedNavBarMachine } from "./animatedNavBarMachine";
 
 const AnimatedNavigationWrapper = styled.div`
@@ -37,6 +37,7 @@ const AnimatedListItem = styled.li`
 const AnimatedAnchor = styled.a`
   color: hsla(319, 7%, 13%, 1);
   text-decoration: none;
+  cursor: pointer;
 `;
 
 const ToasterLogoWrapper = styled.div`
@@ -71,22 +72,22 @@ function AnimatedNavigation() {
         <AnimatedNavElement>
           <AnimatedUnorderedList>
             <AnimatedListItem>
-              <AnimatedAnchor href="#" onClick={(e) => send(getInnerText(e))}>
+              <AnimatedAnchor onClick={(e) => send(getInnerText(e))}>
                 Products
               </AnimatedAnchor>
             </AnimatedListItem>
             <AnimatedListItem>
-              <AnimatedAnchor href="#" onClick={(e) => send(getInnerText(e))}>
+              <AnimatedAnchor onClick={(e) => send(getInnerText(e))}>
                 Community
               </AnimatedAnchor>
             </AnimatedListItem>
             <AnimatedListItem>
-              <AnimatedAnchor href="#" onClick={(e) => send(getInnerText(e))}>
+              <AnimatedAnchor onClick={(e) => send(getInnerText(e))}>
                 Pricing
               </AnimatedAnchor>
             </AnimatedListItem>
             <AnimatedListItem>
-              <AnimatedAnchor href="#" onClick={(e) => send(getInnerText(e))}>
+              <AnimatedAnchor onClick={(e) => send(getInnerText(e))}>
                 Contact
               </AnimatedAnchor>
             </AnimatedListItem>
