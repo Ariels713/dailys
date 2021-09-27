@@ -9,6 +9,7 @@ import PseudoElement from "../components/psuedoClasses/PsuedoElement";
 import Lamp from "../components/eggheadLamp/Lamp";
 import AnimatedNav from "../components/AnimatedNav/AnimatedNav";
 import TextHoverEffect from "../components/textHoverEffect/TextHoverEffect";
+import LeaderLab from "../components/leaderLab/LeaderLab";
 const Grid = styled.div`
   display: flex;
   justify-content: center;
@@ -24,6 +25,9 @@ function SiteGrid({ children }) {
     <>
       <Grid>
         <Lamp />
+      </Grid>
+      <Grid>
+        <LeaderLab />
       </Grid>
       <Grid>
         <AnimatedNav />
